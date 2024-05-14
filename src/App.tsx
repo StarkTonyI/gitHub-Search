@@ -1,18 +1,15 @@
-import {Routes, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import {HomePage} from './pages/Homepages'
 import {FavouritesPage} from './pages/Favorite'
-import {Navigation} from './Components/Navigation'
-
 function App() {
-  return (
-    <>
-      <Navigation />
-      <Routes>
-        <Route path="/" element={ <HomePage /> } />
-        <Route path="/favorites" element={ <FavouritesPage /> } />
-      </Routes>
-    </>
-  )
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/gitHub-search/" element={<FavouritesPage />}/>
+            </Routes>
+        </Router>
+    );
 }
 
-export default App
+export default App;

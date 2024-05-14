@@ -5,7 +5,7 @@ export function Navigation(){
             <h2>GitHub Search</h2>
             <span>
                 <Link className="mr-2" to="/">Home</Link>
-                <Link to="/favorites">Favorite</Link>
+                <Link to="/gitHub-search/">Favorite</Link>
             </span>
         </nav>
     )
